@@ -62,5 +62,5 @@ xcuserdata
 *.xccheckout
 *.xcscmblueprint
 *.xcworkspace
-zig-cache
+.zig-cache
 zig-out
