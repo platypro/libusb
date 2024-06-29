@@ -83,7 +83,7 @@ fn create_libusb(
             .autoconf = b.path("config.h.in"),
         } }, .{
             .DEFAULT_VISIBILITY = .@"__attribute__ ((visibility (\"default\")))",
-            .ENABLE_DEBUG_LOGGING = define_from_bool(optimize == .Debug),
+            .ENABLE_DEBUG_LOGGING = null,
             .ENABLE_LOGGING = 1,
             .HAVE_ASM_TYPES_H = null,
             .HAVE_CLOCK_GETTIME = define_from_bool(!(target.os_tag == .windows)),
